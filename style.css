@@ -1,0 +1,50 @@
+/* file: styles.css */
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+ul#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #556B2F;
+}
+
+li#navbar {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.dropdown li {
+  margin-bottom: 10px;
+}
+
+.dropdown li a {
+  color: #333;
+}
+
+.dropdown li a:hover {
+  background-color: #f0f0f0;
+}
+
+li:hover .dropdown {
+  display: block;
+}
