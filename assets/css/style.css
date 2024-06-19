@@ -33,7 +33,7 @@ body::before {
 /* Media query for smaller screens (tablets and below) */
 @media (max-width: 1023px) {
   body::before {
-    background-size: cover; /* Adjust for smaller screens */
+    background-size: 200%; /* Adjust for smaller screens */
     background-position: center;
   }
 }
