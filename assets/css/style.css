@@ -11,22 +11,22 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
+  background-color: #040404; /* Set background color to black */
   color: #fff;
-  position: cover;
-  background: transparent;
+  margin: 0; /* Remove default margin */
+  position: relative; /* Ensure the pseudo-element is positioned relative to the body */
 }
 
 body::before {
   content: "";
   position: absolute;
-  background: #040404 url("../img/back1.jpg") top right no-repeat;
+  background: url("../img/back1.jpg") top right no-repeat;
   background-size: cover; /* Default for all screens */
   filter: brightness(45%);
   left: 0;
   right: 0;
   top: 0;
-  height: 100vh;  
+  height: 100vh; /* Cover the viewport height */
   z-index: -1;
 }
 
