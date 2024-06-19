@@ -22,7 +22,7 @@ body::before {
   position: fixed;
   background: #040404 url("../img/justin1.jpg") top right no-repeat;
   /* background: #190b99; */
-  background-size: cover;
+  background-size: 75.5%;
   filter: brightness(45%);
   left: 0;
   right: 0;
