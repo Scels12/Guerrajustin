@@ -13,27 +13,27 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
   color: #fff;
-  position: relative;
+  position: cover;
   background: transparent;
 }
 
 body::before {
   content: "";
   position: absolute;
-  background: #040404 url("../img/justin1.jpg") top right no-repeat;
+  background: #040404 url("../img/back1.jpg") top right no-repeat;
   background-size: cover; /* Default for all screens */
   filter: brightness(45%);
   left: 0;
   right: 0;
   top: 0;
-  height: 100vh;
+  height: 100vh;  
   z-index: -1;
 }
 
 /* Media query for smaller screens (tablets and below) */
 @media (max-width: 1023px) {
   body::before {
-    background-size: 200%; /* Adjust for smaller screens */
+    background-size: cover; /* Adjust for smaller screens */
     background-position: center;
   }
 }
