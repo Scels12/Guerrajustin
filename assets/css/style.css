@@ -19,10 +19,9 @@ body {
 
 body::before {
   content: "";
-  position: fixed;
+  position: absolute;
   background: #040404 url("../img/back.jpg") top right no-repeat;
-  /* background: #190b99; */
-  background-size: cover;
+  background-size: cover; /* Default for all screens */
   filter: brightness(45%);
   left: 0;
   right: 0;
@@ -31,13 +30,23 @@ body::before {
   z-index: -1;
 }
 
-@media (min-width: 768px) {
+/* Media query for smaller screens (tablets and below) */
+@media (max-width: 1023px) {
   body::before {
-    background-attachment: fixed;
-    background-size: 50%; /* Adjust for smaller screens */
+    background-size: contain; /* Adjust for smaller screens */
     background-position: center;
   }
 }
+
+/* Media query for larger screens (desktops) */
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+    background-size: cover; /* Ensure full coverage for larger screens */
+    background-position: top right;
+  }
+}
+
 
 a {
   color: #18d26e;
